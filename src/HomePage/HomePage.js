@@ -164,7 +164,7 @@ function HomePage({user, setUser, userKey, setUserKey, logOutUser, userDsKey, se
           {emailID != 'NA' ? <LeftSideBar onSelectFriend={onSelectFriend} friendList={friendList} selectedFriend={selectedFriend} emailId={emailID} updateFriendList={updateFriendList} userKey={userKey} setFriendsKey={setFriendsKey} isListLoading={isListLoading} logOutUser={logOutUser}/> : <>{'Restricted Page!! Go back to Login Page'}</>}
         </Col>
         <Col xs={6} sm={8} md={12} lg={15} xl={18}>
-          {emailID != 'NA' && selectedFriend ? <ChatWindow selectedFriend={selectedFriend} emailId={emailID} sharedKey={sharedKey} friendData={friendData} selectedDsPublicKey={selectedDsPublicKey} userDsKey={userDsKey}/> : <></>}
+          {emailID != 'NA' ? <ChatWindow selectedFriend={selectedFriend} emailId={emailID} sharedKey={sharedKey} friendData={friendData} selectedDsPublicKey={selectedDsPublicKey} userDsKey={userDsKey}/> : <>{'Restricted Page!'}</>}
         </Col>
       </Row>
     </div>

@@ -12,7 +12,7 @@
   width: 100vw;
   
   .left-side{
-    width: 65%;
+    width: 60%;
     height: 100%;
     .left-data{
         margin-top: 150px;
@@ -58,7 +58,7 @@
                 .ant-btn{
                     align-items: center;
                     width: 50%;
-                    background-color: #2EC37E;
+                    background-color: #25cc2d;
                     border-color: #1A1A1A;
                     color: #0d0e0e;
                 }
@@ -77,13 +77,11 @@
     
   }
   .right-side{
-    width: 35%;
+    width: 40%;
     height: 100%;
     background: #1A1A1A;
     opacity: 0.9;
     border-radius: 10px;
-    /* background-image: url('https://i.pinimg.com/originals/74/c7/81/74c781554de4f8827301fff8c72682c0.gif'); */
-    background-size: cover;
     .right-text{
         margin-right: 20px;
         margin-top: 40px;
@@ -92,25 +90,22 @@
         border-radius: 20px;
         height: 90%;
         .right-image{
-            /* margin-left: 150px; */
+            margin-left: 150px;
             display: block;
-            width: 100%;
-            height: 50% !important;
+            width: 200px;
+            height: 200px !important;
             color: aliceblue;
-            background-size: contain;
-            /* background-image: url('https://www.pngmart.com/files/16/Speech-Chat-Icon-Transparent-PNG.png'); */
-            background-image: url('https://i.pinimg.com/originals/d6/3e/59/d63e59c23830a01a891abaf86de9aa3e.gif');
+            background-size: cover;
+            background-image: url('https://www.pngmart.com/files/16/Speech-Chat-Icon-Transparent-PNG.png');
         }
         .right-data{
-          /* position: absolute;
-          top: 0; */
+
         }
         .link-button{
             width: 200px;
-            background-color: #2EC37E;
+            background-color: #1da024;
             opacity: 0.9;
             border-color: #1A1A1A;
-            position: relative;
             color: #0d0e0e;
             .ant-btn-default{
             }

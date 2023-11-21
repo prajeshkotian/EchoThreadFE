@@ -4,23 +4,21 @@
     font-family: 'Dosis', sans-serif;
     .left-side-bar{
         height: 99.6vh;
-        /* border: 1px solid #4f5454; */
+        border: 1px solid #4f5454;
         .top-bar{
             display: flex;
             flex-direction: column;
             height: 150px;
-            /* border-bottom: 1px solid #4f5454; */
+            border-bottom: 1px solid #4f5454;
             .section1{
                 height: 50%;
-                font-family: 'La Belle Aurore', sans-serif;
+                font-family: 'Dosis', sans-serif;
                 display: flex;
                 justify-content: space-between;
                 /* align-self: center; */
-                padding: 0 20px 0 20px;
+                padding: 20px;
                 >h3{
-                    margin-top: 18px;
-                    height: fit-content;
-                    font-size: 1.80em;
+                    font-size: 1.30em;
                     background: -webkit-linear-gradient(#eee, #0cad26);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -40,7 +38,7 @@
                     }
                     >svg:hover{
                         fill: #6AA602;
-                        transform: scale(1.1);
+                        transform: scale(1.2);
                     }
                 }
                 .anticon-logout{
@@ -49,7 +47,7 @@
                         height: 25px;
                     }
                     >svg:hover{
-                        fill: #4cad7e;
+                        fill: #6AA602;
                         transform: scale(1.2);
                     }
                 }
@@ -74,8 +72,7 @@
         .list-contacts{
             font-family: 'Dosis', sans-serif;
             .contact-card{
-                /* border-bottom: 1px solid #4f5454; */
-                border-radius: 3.5px;
+                border-bottom: 1px solid #4f5454;
                 height: 60px;
                 width: 100%;
                 .profile-container{
@@ -85,9 +82,8 @@
                     .image-container{
                         width: 20%;
                         align-self: center;
-                        /* background-color: #282c34; */
+                        background-color: #282c34;
                         margin-left: 10px;
-                        border-radius: 50px;
                     }
                     .data-container{
                         width: 80%;
@@ -104,12 +100,12 @@
                 -ms-transition: background-color 500ms linear;
                 transition: background-color 500ms linear;
                 &.selected{
-                    background-color: #4cad7e;
+                    background-color: #6AA602;
                 }
             }
             .contact-card:hover{
-                background-color: #2e3b35;
-                color: #ffffff;
+                background-color: #6AA602;
+                color: black;
             }
         }
     }
@@ -131,10 +127,8 @@
                 font-family: 'Dosis', sans-serif;
                 .message-top-bar{
                     height: 100%;
-                    /* border: 1px solid #4f5454; */
+                    border: 1px solid #4f5454;
                     .top-bar-container{
-                        border-bottom: 2.5px solid #4cad7e;
-                        border-radius: 100px;
                         padding: 25px;
                         display: flex;
                         justify-content: flex-start;
@@ -146,13 +140,8 @@
                 }
             }
             .message-window{
-                height: calc(100vh - 170px);
-                border-radius: 8px;
-                padding: 10px;
-                /* border: 1px solid #4f5454; */
-                /* background: linear-gradient(-45deg, #031634, #036564);
-                background-size: 400% 400%;
-                animation: gradient 20s ease infinite; */
+                height: calc(100vh - 150px);
+                border: 1px solid #4f5454;
                 overflow: auto;
                 font-family: 'Dosis', sans-serif;
                 .ant-empty{
@@ -254,48 +243,3 @@
         }
     }
 }
-
-.ant-modal-content{
-    .ant-modal-footer{
-        .ant-btn-primary{
-            background-color: #2e3b35;
-            
-        }
-        .ant-btn-primary:hover{
-            border-color: #4cad7e;
-            background-color: #4cad7e;
-        }
-        .ant-btn-default{
-            /* background-color: #2e3b35; */
-            
-        }
-        .ant-btn-default:hover{
-            border-color: #4cad7e;
-            color: #4cad7e;
-            /* background-color: #4cad7e; */
-        }
-    }
-}
-
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes textColor {
-    0% {
-      color: #031634;
-    }
-    50% {
-      color: #033649;
-    }
-    100% {
-      color: #036564;
-    }
-  }

@@ -61,16 +61,13 @@
                     .ant-btn{
                         align-items: center;
                         width: 100%;
-                        background-color: #000000;
+                        background-color: #25cc2d;
                         border-color: #1A1A1A;
                     }
                     .ant-btn:hover{
                         transform: scale(1.1);
-                        /* border-color: aliceblue; */
-                        /* color: #1A1A1A;*/
-                        background-color: #393f3c; 
-                        color: aliceblue;
-                        border-color: #62ac94;
+                        border-color: aliceblue;
+                        color: #1A1A1A;
                     }
                     .ant-btn:disabled{
                         background-color: gray;
@@ -86,20 +83,18 @@
         
     }
     .registration-right{
-        background-color: #010A17;
+        background-color: aliceblue;
         width: 40%;
         height:100%;
         .registration-pic{
-            /* background-image: url('https://png.pngtree.com/png-vector/20220425/ourlarge/pngtree-sending-message-concept-png-image_4556462.png'); */
-            background-image: url('https://i.pinimg.com/originals/f2/42/ba/f242bac4512325947a7284b1afd4d32b.gif');
-            height: 60%;
+            background-image: url('https://png.pngtree.com/png-vector/20220425/ourlarge/pngtree-sending-message-concept-png-image_4556462.png');
+            height: 70%;
             background-size: cover;
         }
         .registration-login{
-            /* opacity: 0.5; */
+            opacity: 0.5;
             >p{
-                color: aliceblue;
-                /* background-color: #1A1A1A; */
+                color: #1A1A1A;
                 /* filter: blur(0px); */
             }
             .link-login{
@@ -108,9 +103,6 @@
             }
             .link-login:hover{
                 transform: scale(1.1);
-                background-color: #62ac94;
-                color: aliceblue;
-                border-color: #62ac94;
             }
 
             

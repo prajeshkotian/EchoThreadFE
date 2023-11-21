@@ -106,7 +106,7 @@ const rsaDecryptMessage=(privateKey, data)=>{
     data);
 }
 
-//fn to generate diffie hellman key pair
+
 const generateDiffieKeyPair=()=>{
     return crypto.subtle.generateKey({
         name: "ECDH",
@@ -116,7 +116,6 @@ const generateDiffieKeyPair=()=>{
     ['deriveKey'])
 }
 
-//fn to derive AES shared key
 const deriveSecretKey=(privateKey, publicKey)=>{
     return crypto.subtle.deriveKey({
         name: 'ECDH',
