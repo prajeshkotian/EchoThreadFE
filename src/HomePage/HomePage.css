@@ -12,8 +12,9 @@
             /* border-bottom: 1px solid #4f5454; */
             .section1{
                 height: 50%;
+                display: flex !important;
+                flex-direction: row;
                 font-family: 'La Belle Aurore', sans-serif;
-                display: flex;
                 justify-content: space-between;
                 /* align-self: center; */
                 padding: 0 20px 0 20px;
@@ -116,6 +117,8 @@
     .ant-row{
         flex-direction: row;
         flex-wrap: nowrap;
+        height: 100%;
+        overflow: hidden;
         .chat-window{
             width: 100%;
             min-height: 100vh;
