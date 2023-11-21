@@ -11,7 +11,7 @@ function SpinLoader({size, ...props}) {
         <LoadingOutlined
             style={{
             fontSize: size,
-            color: '#6AA602'
+            color: '#62ac94'
             }}
             spin
         />

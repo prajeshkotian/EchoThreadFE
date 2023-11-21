@@ -12,41 +12,7 @@ import SpinLoader from '../Components/SpinLoader'
 //import { generateRSAKey, rsaEncryptMessage, rsaDecryptMessage } from '../CryptoUtility'
 
 function ChatWindow({selectedFriend, emailId, sharedKey, friendData, selectedDsPublicKey, userDsKey, ...props}) {
-  // let enc =  new TextEncoder()
-  // let dec= new TextDecoder()
-  // const keyPair = {'privateKey': null, 'publicKey': null}
-  // let encryptedMessage=null
-  // generateRSAKey().then(data=>{
-  //   //console.log('keypair:' ,data.publicKey)
-  //   if(data){
-  //     keyPair.privateKey = data.privateKey
-  //     keyPair.publicKey = data.publicKey
-  //     //console.log('Private: ', keyPair.privateKey)
-  //     //console.log('keypair: ', keyPair)
-  //     encryptedMessage = rsaEncryptMessage(data.publicKey,enc.encode('Hey There!!!')).then(res=>{
-  //       console.log(res, 'encrypted message')
-  //       //console.log(dec.decode(res))
-  //       //return dec.decode(res)
-  //       rsaDecryptMessage(keyPair.privateKey, res).then(res=>{
-  //         console.log(dec.decode(res),'decrypted message')
-  //         //return res
-  //       }).catch(err=>{
-  //         console.log(err)
-  //       })
-  //     }).catch(err=>{
-  //       console.log(err)
-  //     })
-  //   }
-  // })
 
-  // const getDigitalSignatureKey=async()=>{
-  //   const dskeyPair = await generateKeyPair({name: 'ECDSA', namedCurve: 'P-384'},['sign','verify'])
-  //   return dskeyPair
-  // }
-
-  
-  
-  
   const [newMessage, setMessage] = useState('')
   const [messageList, setMessageList] = useState([])
   const [isLoadingMessages, setLoadingMessages] = useState(false)
@@ -107,7 +73,7 @@ function ChatWindow({selectedFriend, emailId, sharedKey, friendData, selectedDsP
       setMessageList(finalMessageListDecrypted)
       setTimeout(()=>{
         setLoadingMessages(false)
-      }, 500)
+      }, 300)
       
       console.log('isLoading Messages :', isLoadingMessages)
   }).catch(err=>{

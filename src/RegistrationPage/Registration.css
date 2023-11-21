@@ -61,7 +61,8 @@
                     .ant-btn{
                         align-items: center;
                         width: 100%;
-                        background-color: #000000;
+                        background-color: #1A1A1A;
+                        color: #ffffff;
                         border-color: #1A1A1A;
                     }
                     .ant-btn:hover{
