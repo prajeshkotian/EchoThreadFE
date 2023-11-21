@@ -94,6 +94,8 @@
                         width: 80%;
                         padding: 5px;
                         align-self: center;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         >span{
                             display: flex;
                             flex-direction: column;
@@ -120,11 +122,12 @@
         height: 100%;
         overflow: hidden;
         .chat-window{
+            display: grid;
             width: 100%;
             min-height: 100vh;
             .spin-loader{
-                height: 570px;
-                
+                height: calc(100% - 160px);
+                align-self: center;
                 .ant-spin{
                     padding-top: calc(100% - 650px);
                 }
@@ -182,8 +185,11 @@
                 }
             }
             .message-input-container{
-                width: calc(80% - 50px);
+                width: 80%;
                 padding: 10px;
+                padding-left: 50px;
+                /* margin-left: 100px; */
+                margin-right: 200px ;
                 .message-box{
                     width: 100%;
                     .ant-input-affix-wrapper{
