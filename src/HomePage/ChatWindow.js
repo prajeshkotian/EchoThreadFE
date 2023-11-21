@@ -66,11 +66,9 @@ function ChatWindow({selectedFriend, emailId, sharedKey, friendData, selectedDsP
         try{
         const obj={...item}
         const cipherTextBuffer = base64ToArrayBuffer(item.chat)
-        console.log('cipherTextbuffer:', cipherTextBuffer)
         // const typedArray = new Uint8Array(cipherTextBuffer)
         // typedArray[0]=1
         const signedMessageBuffer = base64ToArrayBuffer(item.dsValue)
-        console.log('signedMessageBuffer :',signedMessageBuffer)
         const isMessageVerified = await verifyMessage(selectedDsPublicKey, signedMessageBuffer, cipherTextBuffer)
         console.log('isMessageVerified :', isMessageVerified)
         obj.isVerified = isMessageVerified
@@ -167,9 +165,8 @@ function ChatWindow({selectedFriend, emailId, sharedKey, friendData, selectedDsP
 
     //sign encrypted message
     const signedMessage = await signMessage(userDsKey, cipherText)
-    console.log('signedMessage :',signedMessage)
     const signedMessageString = arrayBufferToBase64(signedMessage)
-    console.log('signedMessageString',signedMessageString)
+    
 
     const requestOptions = {
       method: 'POST',
